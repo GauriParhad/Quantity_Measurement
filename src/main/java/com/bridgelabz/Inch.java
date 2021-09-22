@@ -2,10 +2,22 @@ package com.bridgelabz;
 
 public class Inch {
     private double value;
+    private double in;
+    private double ft;
 
     public Inch(double inch) {
         this.value = inch;
     }
+    public Inch() {
+    }
+
+    public boolean lengthComparison(double in, int ft) {
+        this.in = in;
+        this.ft = ft;
+        ft = ft * 12;
+        return ft == in;
+    }
+
 
     @Override
     public boolean equals(Object o) {
