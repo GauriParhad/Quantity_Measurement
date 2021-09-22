@@ -7,14 +7,6 @@ public class Inch {
         this.value = inch;
     }
 
-    public Inch() {
-    }
-
-    public boolean lengthComparison(double in, int ft) {
-        ft = ft * 12;
-        return ft == in;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
